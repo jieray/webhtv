@@ -27,7 +27,7 @@
             android:value="540" />
 
         <activity
-            android:name=".ui.activity.HomeActivity"
+            android:name="com.hemu.android.tv.ui.activity.HomeActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:exported="true"
             android:launchMode="singleTop"
@@ -91,7 +91,7 @@
         </activity>
 
         <activity
-            android:name=".ui.activity.CastActivity"
+            android:name="com.hemu.android.tv.ui.activity.CastActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:exported="true"
             android:launchMode="singleTop"
@@ -103,78 +103,78 @@
         </activity>
 
         <activity
-            android:name=".ui.activity.VodActivity"
+            android:name="com.hemu.android.tv.ui.activity.VodActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.LiveActivity"
+            android:name="com.hemu.android.tv.ui.activity.LiveActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:exported="true"
             android:launchMode="singleTop"
-            android:parentActivityName=".ui.activity.HomeActivity"
+            android:parentActivityName="com.hemu.android.tv.ui.activity.HomeActivity"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.VideoActivity"
+            android:name="com.hemu.android.tv.ui.activity.VideoActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboard|keyboardHidden|navigation"
             android:launchMode="singleTop"
-            android:parentActivityName=".ui.activity.HomeActivity"
+            android:parentActivityName="com.hemu.android.tv.ui.activity.HomeActivity"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.KeepActivity"
+            android:name="com.hemu.android.tv.ui.activity.KeepActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.PushActivity"
+            android:name="com.hemu.android.tv.ui.activity.PushActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.SearchActivity"
+            android:name="com.hemu.android.tv.ui.activity.SearchActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".ui.activity.CollectActivity"
+            android:name="com.hemu.android.tv.ui.activity.CollectActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.FileActivity"
+            android:name="com.hemu.android.tv.ui.activity.FileActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.SettingActivity"
+            android:name="com.hemu.android.tv.ui.activity.SettingActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.SettingPlayerActivity"
+            android:name="com.hemu.android.tv.ui.activity.SettingPlayerActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.SettingDanmakuActivity"
+            android:name="com.hemu.android.tv.ui.activity.SettingDanmakuActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <activity
-            android:name=".ui.activity.SettingEnhanceActivity"
+            android:name="com.hemu.android.tv.ui.activity.SettingEnhanceActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:screenOrientation="sensorLandscape" />
 
         <service
-            android:name=".service.DLNARendererService"
+            android:name="com.hemu.android.tv.service.DLNARendererService"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback" />
 
         <receiver
-            android:name=".receiver.BootReceiver"
+            android:name="com.hemu.android.tv.receiver.BootReceiver"
             android:exported="true"
             android:priority="999">
             <intent-filter>

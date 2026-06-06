@@ -1,12 +1,12 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.databinding.DialogUpdateBinding;
-import com.fongmi.android.tv.impl.UpdateListener;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.databinding.DialogUpdateBinding;
+import com.hemu.android.tv.impl.UpdateListener;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.Locale;

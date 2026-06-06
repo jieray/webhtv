@@ -1,11 +1,11 @@
-package com.fongmi.android.tv.utils;
+package com.hemu.android.tv.utils;
 
 import android.content.Intent;
 import android.os.CountDownTimer;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.event.ActionEvent;
-import com.fongmi.android.tv.service.PlaybackService;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.event.ActionEvent;
+import com.hemu.android.tv.service.PlaybackService;
 
 import java.util.concurrent.TimeUnit;
 

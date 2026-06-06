@@ -1,12 +1,12 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.databinding.DialogThemeBinding;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.ui.adapter.ThemeAdapter;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.databinding.DialogThemeBinding;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.ui.adapter.ThemeAdapter;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class ThemeDialog extends BaseAlertDialog implements ThemeAdapter.OnClickListener {

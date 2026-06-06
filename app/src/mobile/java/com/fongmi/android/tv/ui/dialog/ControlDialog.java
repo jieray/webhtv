@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,18 +11,18 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.bean.History;
-import com.fongmi.android.tv.bean.Parse;
-import com.fongmi.android.tv.databinding.ActivityVideoBinding;
-import com.fongmi.android.tv.databinding.DialogControlBinding;
-import com.fongmi.android.tv.player.PlayerManager;
-import com.fongmi.android.tv.ui.adapter.ParseAdapter;
-import com.fongmi.android.tv.ui.base.ViewType;
-import com.fongmi.android.tv.ui.custom.SpaceItemDecoration;
-import com.fongmi.android.tv.utils.ResUtil;
-import com.fongmi.android.tv.utils.Timer;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.bean.History;
+import com.hemu.android.tv.bean.Parse;
+import com.hemu.android.tv.databinding.ActivityVideoBinding;
+import com.hemu.android.tv.databinding.DialogControlBinding;
+import com.hemu.android.tv.player.PlayerManager;
+import com.hemu.android.tv.ui.adapter.ParseAdapter;
+import com.hemu.android.tv.ui.base.ViewType;
+import com.hemu.android.tv.ui.custom.SpaceItemDecoration;
+import com.hemu.android.tv.utils.ResUtil;
+import com.hemu.android.tv.utils.Timer;
 import com.google.android.material.slider.Slider;
 
 import java.util.Arrays;

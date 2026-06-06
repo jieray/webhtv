@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.adapter;
+package com.hemu.android.tv.ui.adapter;
 
 import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fongmi.android.tv.databinding.AdapterThemeBinding;
-import com.fongmi.android.tv.setting.Setting;
+import com.hemu.android.tv.databinding.AdapterThemeBinding;
+import com.hemu.android.tv.setting.Setting;
 import com.github.bassaer.library.MDColor;
 
 public class ThemeAdapter extends RecyclerView.Adapter<ThemeAdapter.ViewHolder> {

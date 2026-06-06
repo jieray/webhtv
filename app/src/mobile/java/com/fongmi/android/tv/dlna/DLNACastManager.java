@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.dlna;
+package com.hemu.android.tv.dlna;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.bean.Device;
-import com.fongmi.android.tv.service.DLNACastService;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.bean.Device;
+import com.hemu.android.tv.service.DLNACastService;
 
 import org.jupnp.android.AndroidUpnpService;
 import org.jupnp.controlpoint.ControlPoint;

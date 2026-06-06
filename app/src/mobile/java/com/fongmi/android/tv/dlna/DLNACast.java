@@ -1,10 +1,10 @@
-package com.fongmi.android.tv.dlna;
+package com.hemu.android.tv.dlna;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.bean.CastVideo;
-import com.fongmi.android.tv.bean.Device;
-import com.fongmi.android.tv.utils.Notify;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.bean.CastVideo;
+import com.hemu.android.tv.bean.Device;
+import com.hemu.android.tv.utils.Notify;
 
 import org.jupnp.controlpoint.ControlPoint;
 import org.jupnp.model.action.ActionInvocation;

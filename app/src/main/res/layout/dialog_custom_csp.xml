@@ -159,7 +159,7 @@
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
 
-    <com.fongmi.android.tv.ui.custom.CustomNestedScrollView
+    <com.hemu.android.tv.ui.custom.CustomNestedScrollView
         android:id="@+id/contentScroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
 
         </FrameLayout>
 
-    </com.fongmi.android.tv.ui.custom.CustomNestedScrollView>
+    </com.hemu.android.tv.ui.custom.CustomNestedScrollView>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/footer"

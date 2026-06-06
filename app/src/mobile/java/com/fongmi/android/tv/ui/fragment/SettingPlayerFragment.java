@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.fragment;
+package com.hemu.android.tv.ui.fragment;
 
 import android.content.Intent;
 import android.provider.Settings;
@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.databinding.FragmentSettingPlayerBinding;
-import com.fongmi.android.tv.impl.BufferListener;
-import com.fongmi.android.tv.impl.SpeedListener;
-import com.fongmi.android.tv.impl.UaListener;
-import com.fongmi.android.tv.setting.PlayerSetting;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.ui.base.BaseFragment;
-import com.fongmi.android.tv.ui.dialog.BufferDialog;
-import com.fongmi.android.tv.ui.dialog.SpeedDialog;
-import com.fongmi.android.tv.ui.dialog.UaDialog;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.databinding.FragmentSettingPlayerBinding;
+import com.hemu.android.tv.impl.BufferListener;
+import com.hemu.android.tv.impl.SpeedListener;
+import com.hemu.android.tv.impl.UaListener;
+import com.hemu.android.tv.setting.PlayerSetting;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.ui.base.BaseFragment;
+import com.hemu.android.tv.ui.dialog.BufferDialog;
+import com.hemu.android.tv.ui.dialog.SpeedDialog;
+import com.hemu.android.tv.ui.dialog.UaDialog;
+import com.hemu.android.tv.utils.ResUtil;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.text.DecimalFormat;

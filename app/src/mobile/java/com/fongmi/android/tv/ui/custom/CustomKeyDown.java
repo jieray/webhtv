@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.custom;
+package com.hemu.android.tv.ui.custom;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,10 +11,10 @@ import android.view.WindowManager;
 
 import androidx.annotation.NonNull;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.setting.LiveSetting;
-import com.fongmi.android.tv.utils.ResUtil;
-import com.fongmi.android.tv.utils.Util;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.setting.LiveSetting;
+import com.hemu.android.tv.utils.ResUtil;
+import com.hemu.android.tv.utils.Util;
 
 public class CustomKeyDown extends GestureDetector.SimpleOnGestureListener implements ScaleGestureDetector.OnScaleGestureListener {
 

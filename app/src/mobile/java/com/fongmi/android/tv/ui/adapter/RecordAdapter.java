@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.adapter;
+package com.hemu.android.tv.ui.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.databinding.AdapterSearchRecordBinding;
-import com.fongmi.android.tv.setting.Setting;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.databinding.AdapterSearchRecordBinding;
+import com.hemu.android.tv.setting.Setting;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;

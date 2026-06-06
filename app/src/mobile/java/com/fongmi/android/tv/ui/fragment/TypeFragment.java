@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.fragment;
+package com.hemu.android.tv.ui.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,22 +12,22 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.Product;
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.bean.Result;
-import com.fongmi.android.tv.bean.Site;
-import com.fongmi.android.tv.bean.Style;
-import com.fongmi.android.tv.bean.Value;
-import com.fongmi.android.tv.bean.Vod;
-import com.fongmi.android.tv.databinding.FragmentTypeBinding;
-import com.fongmi.android.tv.model.SiteViewModel;
-import com.fongmi.android.tv.ui.activity.SearchActivity;
-import com.fongmi.android.tv.ui.activity.VideoActivity;
-import com.fongmi.android.tv.ui.adapter.VodAdapter;
-import com.fongmi.android.tv.ui.base.BaseFragment;
-import com.fongmi.android.tv.ui.custom.CustomScroller;
-import com.fongmi.android.tv.utils.Notify;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.Product;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Result;
+import com.hemu.android.tv.bean.Site;
+import com.hemu.android.tv.bean.Style;
+import com.hemu.android.tv.bean.Value;
+import com.hemu.android.tv.bean.Vod;
+import com.hemu.android.tv.databinding.FragmentTypeBinding;
+import com.hemu.android.tv.model.SiteViewModel;
+import com.hemu.android.tv.ui.activity.SearchActivity;
+import com.hemu.android.tv.ui.activity.VideoActivity;
+import com.hemu.android.tv.ui.adapter.VodAdapter;
+import com.hemu.android.tv.ui.base.BaseFragment;
+import com.hemu.android.tv.ui.custom.CustomScroller;
+import com.hemu.android.tv.utils.Notify;
+import com.hemu.android.tv.utils.ResUtil;
 
 import java.util.HashMap;
 

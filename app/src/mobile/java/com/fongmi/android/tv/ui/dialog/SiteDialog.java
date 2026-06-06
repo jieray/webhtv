@@ -1,15 +1,15 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.bean.Site;
-import com.fongmi.android.tv.databinding.DialogSiteBinding;
-import com.fongmi.android.tv.impl.SiteListener;
-import com.fongmi.android.tv.ui.adapter.SiteAdapter;
-import com.fongmi.android.tv.ui.custom.SpaceItemDecoration;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Site;
+import com.hemu.android.tv.databinding.DialogSiteBinding;
+import com.hemu.android.tv.impl.SiteListener;
+import com.hemu.android.tv.ui.adapter.SiteAdapter;
+import com.hemu.android.tv.ui.custom.SpaceItemDecoration;
+import com.hemu.android.tv.utils.ResUtil;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class SiteDialog extends BaseAlertDialog implements SiteAdapter.OnClickListener {

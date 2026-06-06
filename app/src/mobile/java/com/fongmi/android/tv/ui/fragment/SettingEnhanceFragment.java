@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.fragment;
+package com.hemu.android.tv.ui.fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,17 +8,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.databinding.FragmentSettingEnhanceBinding;
-import com.fongmi.android.tv.setting.CustomCspSetting;
-import com.fongmi.android.tv.setting.ProxySetting;
-import com.fongmi.android.tv.ui.base.BaseFragment;
-import com.fongmi.android.tv.ui.dialog.CustomCspDialog;
-import com.fongmi.android.tv.ui.dialog.DebugLogDialog;
-import com.fongmi.android.tv.ui.dialog.ManagePageDialog;
-import com.fongmi.android.tv.ui.dialog.OneKeySyncDialog;
-import com.fongmi.android.tv.ui.dialog.ShellProxyDialog;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.databinding.FragmentSettingEnhanceBinding;
+import com.hemu.android.tv.setting.CustomCspSetting;
+import com.hemu.android.tv.setting.ProxySetting;
+import com.hemu.android.tv.ui.base.BaseFragment;
+import com.hemu.android.tv.ui.dialog.CustomCspDialog;
+import com.hemu.android.tv.ui.dialog.DebugLogDialog;
+import com.hemu.android.tv.ui.dialog.ManagePageDialog;
+import com.hemu.android.tv.ui.dialog.OneKeySyncDialog;
+import com.hemu.android.tv.ui.dialog.ShellProxyDialog;
 
 public class SettingEnhanceFragment extends BaseFragment {
 

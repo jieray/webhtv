@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.activity;
+package com.hemu.android.tv.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,18 +12,18 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.Product;
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.bean.Config;
-import com.fongmi.android.tv.bean.Keep;
-import com.fongmi.android.tv.databinding.ActivityKeepBinding;
-import com.fongmi.android.tv.event.RefreshEvent;
-import com.fongmi.android.tv.impl.Callback;
-import com.fongmi.android.tv.ui.adapter.KeepAdapter;
-import com.fongmi.android.tv.ui.base.BaseActivity;
-import com.fongmi.android.tv.ui.dialog.SyncDialog;
-import com.fongmi.android.tv.utils.Notify;
+import com.hemu.android.tv.Product;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Config;
+import com.hemu.android.tv.bean.Keep;
+import com.hemu.android.tv.databinding.ActivityKeepBinding;
+import com.hemu.android.tv.event.RefreshEvent;
+import com.hemu.android.tv.impl.Callback;
+import com.hemu.android.tv.ui.adapter.KeepAdapter;
+import com.hemu.android.tv.ui.base.BaseActivity;
+import com.hemu.android.tv.ui.dialog.SyncDialog;
+import com.hemu.android.tv.utils.Notify;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.greenrobot.eventbus.Subscribe;

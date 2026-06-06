@@ -1,14 +1,14 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.content.DialogInterface;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.databinding.DialogSpeedBinding;
-import com.fongmi.android.tv.impl.SpeedListener;
-import com.fongmi.android.tv.setting.PlayerSetting;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.databinding.DialogSpeedBinding;
+import com.hemu.android.tv.impl.SpeedListener;
+import com.hemu.android.tv.setting.PlayerSetting;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class SpeedDialog extends BaseAlertDialog {

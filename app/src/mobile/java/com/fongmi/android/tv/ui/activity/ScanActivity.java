@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.activity;
+package com.hemu.android.tv.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,9 +8,9 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.databinding.ActivityScanBinding;
-import com.fongmi.android.tv.ui.base.BaseActivity;
-import com.fongmi.android.tv.utils.Util;
+import com.hemu.android.tv.databinding.ActivityScanBinding;
+import com.hemu.android.tv.ui.base.BaseActivity;
+import com.hemu.android.tv.utils.Util;
 import com.google.zxing.BarcodeFormat;
 import com.journeyapps.barcodescanner.BarcodeCallback;
 import com.journeyapps.barcodescanner.BarcodeResult;

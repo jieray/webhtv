@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.fragment;
+package com.hemu.android.tv.ui.fragment;
 
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -9,12 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.databinding.FragmentSettingDanmakuBinding;
-import com.fongmi.android.tv.impl.DanmakuListener;
-import com.fongmi.android.tv.setting.DanmakuSetting;
-import com.fongmi.android.tv.ui.base.BaseFragment;
-import com.fongmi.android.tv.ui.dialog.DanmakuApiDialog;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.databinding.FragmentSettingDanmakuBinding;
+import com.hemu.android.tv.impl.DanmakuListener;
+import com.hemu.android.tv.setting.DanmakuSetting;
+import com.hemu.android.tv.ui.base.BaseFragment;
+import com.hemu.android.tv.ui.dialog.DanmakuApiDialog;
 
 public class SettingDanmakuFragment extends BaseFragment implements DanmakuListener {
 

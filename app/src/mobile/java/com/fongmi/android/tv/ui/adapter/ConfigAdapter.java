@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.adapter;
+package com.hemu.android.tv.ui.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fongmi.android.tv.bean.Config;
-import com.fongmi.android.tv.databinding.AdapterConfigBinding;
+import com.hemu.android.tv.bean.Config;
+import com.hemu.android.tv.databinding.AdapterConfigBinding;
 
 import java.util.List;
 

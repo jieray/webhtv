@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.fragment;
+package com.hemu.android.tv.ui.fragment;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -17,20 +17,20 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.bean.Collect;
-import com.fongmi.android.tv.bean.Result;
-import com.fongmi.android.tv.bean.Site;
-import com.fongmi.android.tv.bean.Vod;
-import com.fongmi.android.tv.databinding.FragmentCollectBinding;
-import com.fongmi.android.tv.model.SiteViewModel;
-import com.fongmi.android.tv.ui.activity.FolderActivity;
-import com.fongmi.android.tv.ui.activity.VideoActivity;
-import com.fongmi.android.tv.ui.adapter.CollectAdapter;
-import com.fongmi.android.tv.ui.adapter.SearchAdapter;
-import com.fongmi.android.tv.ui.base.BaseFragment;
-import com.fongmi.android.tv.ui.custom.CustomScroller;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Collect;
+import com.hemu.android.tv.bean.Result;
+import com.hemu.android.tv.bean.Site;
+import com.hemu.android.tv.bean.Vod;
+import com.hemu.android.tv.databinding.FragmentCollectBinding;
+import com.hemu.android.tv.model.SiteViewModel;
+import com.hemu.android.tv.ui.activity.FolderActivity;
+import com.hemu.android.tv.ui.activity.VideoActivity;
+import com.hemu.android.tv.ui.adapter.CollectAdapter;
+import com.hemu.android.tv.ui.adapter.SearchAdapter;
+import com.hemu.android.tv.ui.base.BaseFragment;
+import com.hemu.android.tv.ui.custom.CustomScroller;
+import com.hemu.android.tv.utils.ResUtil;
 
 import java.util.List;
 

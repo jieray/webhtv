@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.activity;
+package com.hemu.android.tv.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.databinding.ActivitySearchBinding;
-import com.fongmi.android.tv.ui.base.BaseActivity;
-import com.fongmi.android.tv.ui.fragment.CollectFragment;
-import com.fongmi.android.tv.ui.fragment.SearchFragment;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.databinding.ActivitySearchBinding;
+import com.hemu.android.tv.ui.base.BaseActivity;
+import com.hemu.android.tv.ui.fragment.CollectFragment;
+import com.hemu.android.tv.ui.fragment.SearchFragment;
 
 public class SearchActivity extends BaseActivity {
 

@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.activity;
+package com.hemu.android.tv.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,12 +10,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.bean.Class;
-import com.fongmi.android.tv.bean.Result;
-import com.fongmi.android.tv.databinding.ActivityFolderBinding;
-import com.fongmi.android.tv.ui.base.BaseActivity;
-import com.fongmi.android.tv.ui.fragment.FolderFragment;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.bean.Class;
+import com.hemu.android.tv.bean.Result;
+import com.hemu.android.tv.databinding.ActivityFolderBinding;
+import com.hemu.android.tv.ui.base.BaseActivity;
+import com.hemu.android.tv.ui.fragment.FolderFragment;
 
 public class FolderActivity extends BaseActivity {
 

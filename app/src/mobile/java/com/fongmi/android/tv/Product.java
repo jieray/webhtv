@@ -1,12 +1,12 @@
-package com.fongmi.android.tv;
+package com.hemu.android.tv;
 
 import android.content.Context;
 import android.os.Build;
 import android.view.DisplayCutout;
 
-import com.fongmi.android.tv.bean.Style;
-import com.fongmi.android.tv.setting.PlayerSetting;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.bean.Style;
+import com.hemu.android.tv.setting.PlayerSetting;
+import com.hemu.android.tv.utils.ResUtil;
 
 public class Product {
 

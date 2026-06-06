@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.content.DialogInterface;
 import android.text.TextUtils;
@@ -7,11 +7,11 @@ import android.view.inputmethod.EditorInfo;
 import androidx.fragment.app.Fragment;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.databinding.DialogUaBinding;
-import com.fongmi.android.tv.impl.UaListener;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.ui.custom.CustomTextListener;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.databinding.DialogUaBinding;
+import com.hemu.android.tv.impl.UaListener;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.ui.custom.CustomTextListener;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class UaDialog extends BaseAlertDialog {

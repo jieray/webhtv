@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.content.Context;
 
@@ -7,13 +7,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.api.config.LiveConfig;
-import com.fongmi.android.tv.bean.Live;
-import com.fongmi.android.tv.databinding.DialogLiveBinding;
-import com.fongmi.android.tv.impl.LiveListener;
-import com.fongmi.android.tv.ui.adapter.LiveAdapter;
-import com.fongmi.android.tv.ui.custom.SpaceItemDecoration;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.api.config.LiveConfig;
+import com.hemu.android.tv.bean.Live;
+import com.hemu.android.tv.databinding.DialogLiveBinding;
+import com.hemu.android.tv.impl.LiveListener;
+import com.hemu.android.tv.ui.adapter.LiveAdapter;
+import com.hemu.android.tv.ui.custom.SpaceItemDecoration;
+import com.hemu.android.tv.utils.ResUtil;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class LiveDialog extends BaseAlertDialog implements LiveAdapter.OnClickListener {

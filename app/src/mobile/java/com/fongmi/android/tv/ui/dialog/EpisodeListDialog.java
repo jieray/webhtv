@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.bean.Episode;
-import com.fongmi.android.tv.databinding.DialogEpisodeListBinding;
-import com.fongmi.android.tv.ui.adapter.EpisodeAdapter;
-import com.fongmi.android.tv.ui.base.ViewType;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.bean.Episode;
+import com.hemu.android.tv.databinding.DialogEpisodeListBinding;
+import com.hemu.android.tv.ui.adapter.EpisodeAdapter;
+import com.hemu.android.tv.ui.base.ViewType;
+import com.hemu.android.tv.utils.ResUtil;
 
 import java.util.List;
 

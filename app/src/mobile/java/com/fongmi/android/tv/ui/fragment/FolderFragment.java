@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.fragment;
+package com.hemu.android.tv.ui.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,13 +9,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.bean.Class;
-import com.fongmi.android.tv.bean.Filter;
-import com.fongmi.android.tv.bean.Result;
-import com.fongmi.android.tv.bean.Value;
-import com.fongmi.android.tv.databinding.FragmentFolderBinding;
-import com.fongmi.android.tv.ui.base.BaseFragment;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.bean.Class;
+import com.hemu.android.tv.bean.Filter;
+import com.hemu.android.tv.bean.Result;
+import com.hemu.android.tv.bean.Value;
+import com.hemu.android.tv.databinding.FragmentFolderBinding;
+import com.hemu.android.tv.ui.base.BaseFragment;
 
 import java.util.HashMap;
 import java.util.Optional;

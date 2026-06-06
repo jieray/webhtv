@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,11 +10,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.databinding.DialogRestoreBinding;
-import com.fongmi.android.tv.db.AppDatabase;
-import com.fongmi.android.tv.impl.Callback;
-import com.fongmi.android.tv.ui.adapter.RestoreAdapter;
-import com.fongmi.android.tv.ui.custom.SpaceItemDecoration;
+import com.hemu.android.tv.databinding.DialogRestoreBinding;
+import com.hemu.android.tv.db.AppDatabase;
+import com.hemu.android.tv.impl.Callback;
+import com.hemu.android.tv.ui.adapter.RestoreAdapter;
+import com.hemu.android.tv.ui.custom.SpaceItemDecoration;
 
 import java.io.File;
 

@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -12,15 +12,15 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.fragment.app.Fragment;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.api.config.LiveConfig;
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.api.config.WallConfig;
-import com.fongmi.android.tv.bean.Config;
-import com.fongmi.android.tv.databinding.DialogConfigBinding;
-import com.fongmi.android.tv.impl.ConfigListener;
-import com.fongmi.android.tv.ui.custom.CustomTextListener;
-import com.fongmi.android.tv.utils.FileChooser;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.api.config.LiveConfig;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.api.config.WallConfig;
+import com.hemu.android.tv.bean.Config;
+import com.hemu.android.tv.databinding.DialogConfigBinding;
+import com.hemu.android.tv.impl.ConfigListener;
+import com.hemu.android.tv.ui.custom.CustomTextListener;
+import com.hemu.android.tv.utils.FileChooser;
 import com.github.catvod.utils.Path;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 

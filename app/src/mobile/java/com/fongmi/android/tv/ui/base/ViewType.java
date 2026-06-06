@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.base;
+package com.hemu.android.tv.ui.base;
 
 public class ViewType {
 

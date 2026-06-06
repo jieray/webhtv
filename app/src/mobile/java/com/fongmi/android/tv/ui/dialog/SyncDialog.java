@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,23 +15,23 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.Constant;
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.bean.Config;
-import com.fongmi.android.tv.bean.Device;
-import com.fongmi.android.tv.bean.History;
-import com.fongmi.android.tv.bean.Keep;
-import com.fongmi.android.tv.databinding.DialogDeviceBinding;
-import com.fongmi.android.tv.impl.Callback;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.ui.activity.ScanActivity;
-import com.fongmi.android.tv.ui.adapter.DeviceAdapter;
-import com.fongmi.android.tv.ui.custom.SpaceItemDecoration;
-import com.fongmi.android.tv.utils.Notify;
-import com.fongmi.android.tv.utils.ResUtil;
-import com.fongmi.android.tv.utils.ScanTask;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.Constant;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Config;
+import com.hemu.android.tv.bean.Device;
+import com.hemu.android.tv.bean.History;
+import com.hemu.android.tv.bean.Keep;
+import com.hemu.android.tv.databinding.DialogDeviceBinding;
+import com.hemu.android.tv.impl.Callback;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.ui.activity.ScanActivity;
+import com.hemu.android.tv.ui.adapter.DeviceAdapter;
+import com.hemu.android.tv.ui.custom.SpaceItemDecoration;
+import com.hemu.android.tv.utils.Notify;
+import com.hemu.android.tv.utils.ResUtil;
+import com.hemu.android.tv.utils.ScanTask;
 import com.github.catvod.net.OkHttp;
 
 import java.io.IOException;

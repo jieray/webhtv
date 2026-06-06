@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.fragment;
+package com.hemu.android.tv.ui.fragment;
 
 import static androidx.fragment.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN;
 
@@ -22,19 +22,19 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.bean.Word;
-import com.fongmi.android.tv.databinding.FragmentSearchBinding;
-import com.fongmi.android.tv.impl.Callback;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.ui.adapter.RecordAdapter;
-import com.fongmi.android.tv.ui.adapter.WordAdapter;
-import com.fongmi.android.tv.ui.base.BaseFragment;
-import com.fongmi.android.tv.ui.custom.CustomTextListener;
-import com.fongmi.android.tv.ui.dialog.SiteDialog;
-import com.fongmi.android.tv.utils.SearchSuggest;
-import com.fongmi.android.tv.utils.Util;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.bean.Word;
+import com.hemu.android.tv.databinding.FragmentSearchBinding;
+import com.hemu.android.tv.impl.Callback;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.ui.adapter.RecordAdapter;
+import com.hemu.android.tv.ui.adapter.WordAdapter;
+import com.hemu.android.tv.ui.base.BaseFragment;
+import com.hemu.android.tv.ui.custom.CustomTextListener;
+import com.hemu.android.tv.ui.dialog.SiteDialog;
+import com.hemu.android.tv.utils.SearchSuggest;
+import com.hemu.android.tv.utils.Util;
 import com.github.catvod.net.OkHttp;
 import com.google.android.flexbox.FlexDirection;
 import com.google.android.flexbox.FlexboxLayoutManager;

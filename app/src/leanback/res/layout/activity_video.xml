@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.fongmi.android.tv.ui.custom.ProgressLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.hemu.android.tv.ui.custom.ProgressLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/progressLayout"
@@ -299,4 +299,4 @@
             android:visibility="gone" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-</com.fongmi.android.tv.ui.custom.ProgressLayout>
+</com.hemu.android.tv.ui.custom.ProgressLayout>

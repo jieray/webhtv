@@ -1,13 +1,13 @@
-package com.fongmi.android.tv.ui.holder;
+package com.hemu.android.tv.ui.holder;
 
 import androidx.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
-import com.fongmi.android.tv.bean.Vod;
-import com.fongmi.android.tv.databinding.AdapterVodOvalBinding;
-import com.fongmi.android.tv.ui.adapter.VodAdapter;
-import com.fongmi.android.tv.ui.base.BaseVodHolder;
-import com.fongmi.android.tv.utils.ImgUtil;
+import com.hemu.android.tv.bean.Vod;
+import com.hemu.android.tv.databinding.AdapterVodOvalBinding;
+import com.hemu.android.tv.ui.adapter.VodAdapter;
+import com.hemu.android.tv.ui.base.BaseVodHolder;
+import com.hemu.android.tv.utils.ImgUtil;
 
 public class VodOvalHolder extends BaseVodHolder {
 

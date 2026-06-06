@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.base;
+package com.hemu.android.tv.ui.base;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
@@ -16,9 +16,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.ui.custom.CustomWallView;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.ui.custom.CustomWallView;
+import com.hemu.android.tv.utils.ResUtil;
 import com.google.android.material.color.DynamicColors;
 import com.google.android.material.color.DynamicColorsOptions;
 

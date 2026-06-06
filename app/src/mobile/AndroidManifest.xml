@@ -11,7 +11,7 @@
     <application>
 
         <activity
-            android:name=".ui.activity.HomeActivity"
+            android:name="com.hemu.android.tv.ui.activity.HomeActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:exported="true"
             android:launchMode="singleTop"
@@ -74,59 +74,59 @@
         </activity>
 
         <activity
-            android:name=".ui.activity.SearchActivity"
+            android:name="com.hemu.android.tv.ui.activity.SearchActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout"
             android:screenOrientation="fullUser"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
-            android:name=".ui.activity.FileActivity"
+            android:name="com.hemu.android.tv.ui.activity.FileActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout"
             android:screenOrientation="fullUser" />
 
         <activity
-            android:name=".ui.activity.FolderActivity"
+            android:name="com.hemu.android.tv.ui.activity.FolderActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout"
             android:screenOrientation="fullUser" />
 
         <activity
-            android:name=".ui.activity.HistoryActivity"
+            android:name="com.hemu.android.tv.ui.activity.HistoryActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout"
             android:screenOrientation="fullUser" />
 
         <activity
-            android:name=".ui.activity.KeepActivity"
+            android:name="com.hemu.android.tv.ui.activity.KeepActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout"
             android:screenOrientation="fullUser" />
 
         <activity
-            android:name=".ui.activity.LiveActivity"
+            android:name="com.hemu.android.tv.ui.activity.LiveActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|uiMode|orientation"
             android:exported="true"
             android:launchMode="singleTop"
-            android:parentActivityName=".ui.activity.HomeActivity"
+            android:parentActivityName="com.hemu.android.tv.ui.activity.HomeActivity"
             android:screenOrientation="sensorLandscape"
             android:supportsPictureInPicture="true" />
 
         <activity
-            android:name=".ui.activity.ScanActivity"
+            android:name="com.hemu.android.tv.ui.activity.ScanActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout"
             android:screenOrientation="fullUser" />
 
         <activity
-            android:name=".ui.activity.VideoActivity"
+            android:name="com.hemu.android.tv.ui.activity.VideoActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|uiMode|orientation"
             android:launchMode="singleTop"
-            android:parentActivityName=".ui.activity.HomeActivity"
+            android:parentActivityName="com.hemu.android.tv.ui.activity.HomeActivity"
             android:screenOrientation="fullUser"
             android:supportsPictureInPicture="true" />
 
         <receiver
-            android:name=".receiver.ShortcutReceiver"
+            android:name="com.hemu.android.tv.receiver.ShortcutReceiver"
             android:exported="false" />
 
         <service
-            android:name=".service.DLNACastService"
+            android:name="com.hemu.android.tv.service.DLNACastService"
             android:exported="false" />
 
     </application>

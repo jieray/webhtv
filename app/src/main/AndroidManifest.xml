@@ -50,7 +50,7 @@
     </queries>
 
     <application
-        android:name=".App"
+        android:name="com.hemu.android.tv.App"
         android:allowBackup="false"
         android:appCategory="video"
         android:enableOnBackInvokedCallback="true"
@@ -89,17 +89,17 @@
             android:exported="false"
             tools:node="merge">
             <meta-data
-                android:name="com.fongmi.android.tv.Startup"
+                android:name="com.hemu.android.tv.Startup"
                 android:value="androidx.startup" />
         </provider>
 
         <activity
-            android:name=".ui.activity.CrashActivity"
+            android:name="com.hemu.android.tv.ui.activity.CrashActivity"
             android:process=":error_activity"
             android:theme="@style/Theme.Crash" />
 
         <receiver
-            android:name=".receiver.ActionReceiver"
+            android:name="com.hemu.android.tv.receiver.ActionReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="${applicationId}.stop" />
@@ -112,7 +112,7 @@
         </receiver>
 
         <service
-            android:name=".service.PlaybackService"
+            android:name="com.hemu.android.tv.service.PlaybackService"
             android:exported="true"
             android:foregroundServiceType="mediaPlayback">
             <intent-filter>
@@ -122,7 +122,7 @@
         </service>
 
         <service
-            android:name=".service.ManageService"
+            android:name="com.hemu.android.tv.service.ManageService"
             android:exported="false"
             android:foregroundServiceType="dataSync|connectedDevice"
             android:stopWithTask="false" />
