@@ -68,6 +68,10 @@ public class LiveConfig extends BaseConfig {
         return get().getHome().isEmpty();
     }
 
+    public static boolean hasLoadedLives() {
+        return !get().getLives().isEmpty();
+    }
+
     public static boolean hasUrl() {
         return !TextUtils.isEmpty(getUrl());
     }
@@ -114,6 +118,10 @@ public class LiveConfig extends BaseConfig {
 
     @Override
     protected void load(Config config) throws Throwable {
+        if (config.isEmpty()) {
+            initLive(config, new JsonObject());
+            return;
+        }
         String json = Decoder.getJson(UrlUtil.convert(config.getUrl()), TAG);
         if (Json.isObj(json)) checkJson(config, Json.parse(json).getAsJsonObject());
         else parseText(config, json);
@@ -145,7 +153,7 @@ public class LiveConfig extends BaseConfig {
         Live live = new Live(UrlUtil.getName(config.getUrl()), config.getUrl()).sync();
         lives = new ArrayList<>(List.of(live));
         LiveParser.text(live, text);
-        setHome(config, live, false);
+        finishLive(config, "");
     }
 
     private void checkJson(Config config, JsonObject object) throws Throwable {
@@ -188,6 +196,11 @@ public class LiveConfig extends BaseConfig {
         String spider = Json.safeString(object, "spider");
         BaseLoader.get().parseJar(spider, false);
         setLives(Json.safeListElement(object, "lives").stream().map(e -> Live.objectFrom(e, spider)).distinct().collect(Collectors.toCollection(ArrayList::new)));
+        finishLive(config, spider);
+    }
+
+    private void finishLive(Config config, String spider) {
+        CustomCspSetting.inject(getLives(), spider);
         Map<String, Live> items = Live.findAll().stream().collect(Collectors.toMap(Live::getName, Function.identity()));
         getLives().forEach(live -> live.sync(items.get(live.getName())));
         setHome(config, getLives().isEmpty() ? new Live() : getLives().stream().filter(item -> item.getName().equals(config.getHome())).findFirst().orElse(getLives().get(0)), false);

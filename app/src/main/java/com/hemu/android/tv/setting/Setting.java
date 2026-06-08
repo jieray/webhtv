@@ -116,6 +116,30 @@ public class Setting {
         Prefers.put("drive_check", driveCheck);
     }
 
+    public static boolean isSiteHealthSort() {
+        return Prefers.getBoolean("site_health_sort", true);
+    }
+
+    public static void putSiteHealthSort(boolean sort) {
+        Prefers.put("site_health_sort", sort);
+    }
+
+    public static boolean isSiteHealthDialogSort() {
+        return Prefers.getBoolean("site_health_dialog_sort");
+    }
+
+    public static void putSiteHealthDialogSort(boolean sort) {
+        Prefers.put("site_health_dialog_sort", sort);
+    }
+
+    public static boolean isWebHomeExtension() {
+        return Prefers.getBoolean("web_home_extension", true);
+    }
+
+    public static void putWebHomeExtension(boolean extension) {
+        Prefers.put("web_home_extension", extension);
+    }
+
     public static boolean isDebugLog() {
         return DebugLogStore.isEnabled();
     }

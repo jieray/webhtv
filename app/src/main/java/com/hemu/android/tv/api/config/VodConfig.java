@@ -89,6 +89,7 @@ public class VodConfig extends BaseConfig {
         flags = null;
         rules = null;
         parses = null;
+        WebHomeExtensionRegistry.get().setGlobalSources(null, "");
         BaseLoader.get().clear();
         RuleConfig.get().invalidate();
         return this;
@@ -146,6 +147,7 @@ public class VodConfig extends BaseConfig {
         initWall(config, object);
         initSite(config, object);
         initParse(config, object);
+        WebHomeExtensionRegistry.get().setGlobalSources(object.get("webHomeExtensions"), config.getUrl());
         config.setLogo(Json.safeString(object, "logo"));
         config.setNotice(Json.safeString(object, "notice"));
         config.setDanmaku(Json.safeString(object, "danmaku"));

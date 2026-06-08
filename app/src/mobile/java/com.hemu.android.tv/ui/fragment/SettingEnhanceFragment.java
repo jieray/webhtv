@@ -46,6 +46,10 @@ public class SettingEnhanceFragment extends BaseFragment {
     protected void initEvent() {
         mBinding.driveCheck.setOnClickListener(this::setDriveCheck);
         mBinding.debugLog.setOnClickListener(this::setDebugLog);
+        mBinding.siteHealthSort.setOnClickListener(view -> SiteHealthDialog.show(this, this::setText));
+        mBinding.siteHealthSort.setOnLongClickListener(this::clearSiteHealth);
+        mBinding.webHomeExtension.setOnClickListener(view -> WebHomeExtensionDialog.show(this, this::setText));
+        mBinding.webHomeExtension.setOnLongClickListener(this::clearWebHomeExtension);
         mBinding.managePage.setOnClickListener(view -> ManagePageDialog.show(this));
         mBinding.shellProxy.setOnClickListener(view -> ShellProxyDialog.show(this, this::setText));
         mBinding.shellProxy.setOnLongClickListener(v -> false);
@@ -57,6 +61,9 @@ public class SettingEnhanceFragment extends BaseFragment {
     private void setText() {
         mBinding.driveCheckText.setText(getSwitch(Setting.isDriveCheck()));
         mBinding.debugLogText.setText(getSwitch(Setting.isDebugLog()));
+        mBinding.siteHealthSortText.setText(getSwitch(Setting.isSiteHealthSort()));
+        WebHomeExtensionRegistry.Snapshot webHomeExtension = WebHomeExtensionRegistry.get().snapshot();
+        mBinding.webHomeExtensionText.setText(getSwitch(Setting.isWebHomeExtension()) + " · " + webHomeExtension.readyCount + "/" + webHomeExtension.installedCount);
         mBinding.managePageText.setText(R.string.manage_page_web);
         mBinding.shellProxyText.setText(getSwitch(Setting.isShellProxy()) + " · " + getString(R.string.setting_proxy_rule_count, ProxySetting.count()));
         mBinding.shellProxyConfigText.setText(getString(R.string.setting_proxy_rule_count, ProxySetting.count()));
@@ -75,6 +82,18 @@ public class SettingEnhanceFragment extends BaseFragment {
         mBinding.debugLogText.setText(getSwitch(Setting.isDebugLog()));
         if (!Setting.isDebugLog()) return;
         DebugLogDialog.show(this);
+    }
+
+    private boolean clearSiteHealth(View view) {
+        SiteHealthStore.clear();
+        Notify.show(R.string.site_health_clear_done);
+        return true;
+    }
+
+    private boolean clearWebHomeExtension(View view) {
+        WebHomeExtensionRegistry.get().clear();
+        Notify.show(R.string.web_home_extension_clear_done);
+        return true;
     }
 
     @Override

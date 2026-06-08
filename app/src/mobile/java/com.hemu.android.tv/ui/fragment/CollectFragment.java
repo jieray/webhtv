@@ -32,6 +32,7 @@ import com.hemu.android.tv.ui.base.BaseFragment;
 import com.hemu.android.tv.ui.custom.CustomScroller;
 import com.hemu.android.tv.utils.ResUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CollectFragment extends BaseFragment implements MenuProvider, CollectAdapter.OnClickListener, SearchAdapter.OnClickListener, CustomScroller.Callback {
@@ -117,7 +118,13 @@ public class CollectFragment extends BaseFragment implements MenuProvider, Colle
 
     private void setSites() {
         String siteKey = getSiteKey();
-        mSites = VodConfig.get().getSites().stream().filter(Site::isSearchable).filter(site -> TextUtils.isEmpty(siteKey) || site.getKey().equals(siteKey)).toList();
+        mSites = new ArrayList<>();
+        for (Site site : VodConfig.get().getSites()) {
+            if (!site.isSearchable()) continue;
+            if (!TextUtils.isEmpty(siteKey) && !site.getKey().equals(siteKey)) continue;
+            mSites.add(site);
+        }
+        SiteHealthStore.sortSites(mSites);
     }
 
     private void setWidth() {
@@ -201,6 +208,7 @@ public class CollectFragment extends BaseFragment implements MenuProvider, Colle
     public void onDestroyView() {
         super.onDestroyView();
         mViewModel.stopSearch();
+        SiteHealthStore.flush();
         requireActivity().removeMenuProvider(this);
     }
 }

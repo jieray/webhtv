@@ -46,6 +46,14 @@ public class QuickAdapter extends RecyclerView.Adapter<QuickAdapter.ViewHolder> 
         return mItems.get(position);
     }
 
+    public int getBestPosition() {
+        int position = 0;
+        for (int i = 1; i < mItems.size(); i++) {
+            if (SiteHealthStore.compareVods(mItems.get(i), mItems.get(position)) < 0) position = i;
+        }
+        return position;
+    }
+
     @Override
     public int getItemCount() {
         return mItems.size();

@@ -52,6 +52,16 @@ public class HomeWebBridge {
     }
 
     @JavascriptInterface
+    public void console(String level, String message) {
+        controller.dispatchDebugConsole(level, message);
+    }
+
+    @JavascriptInterface
+    public void network(String type, String method, String url, int status, long durationMs, String detail) {
+        controller.dispatchDebugNetwork(type, method, url, status, durationMs, detail);
+    }
+
+    @JavascriptInterface
     public String resourceUrl(String url, String options) {
         JsonObject object = WebCall.object(options);
         StringBuilder builder = new StringBuilder(Server.get().getAddress("/webResource?url=")).append(encode(url));
@@ -82,7 +92,7 @@ public class HomeWebBridge {
         try {
             SpiderDebug.log("webhome", "invoke method=%s payload=%s", method, payload);
             String result = switch (method) {
-                case "net.request" -> WebCall.request(payload);
+                case "net.request" -> WebCall.request(payload, controller);
                 case "net.resourceUrl" -> quote(resourceUrl(Json.safeString(payload, "url"), payload.toString()));
                 case "player.playUrl" -> playUrl(payload);
                 case "player.playVod" -> playVod(payload);
@@ -101,6 +111,9 @@ public class HomeWebBridge {
                 case "device.info" -> device();
                 case "site.info" -> site();
                 case "config.info" -> config();
+                case "ext.info" -> extInfo();
+                case "ext.log" -> extLog(payload);
+                case "ext.toast" -> extToast(payload);
                 case "ui.setToolbar" -> setToolbar(payload);
                 case "navigation.back" -> back();
                 case "navigation.reload" -> reload();
@@ -248,6 +261,31 @@ public class HomeWebBridge {
         object.addProperty("desc", VodConfig.getDesc());
         object.addProperty("driveCheck", Setting.isDriveCheck());
         return object.toString();
+    }
+
+    private String extInfo() {
+        JsonObject object = new JsonObject();
+        Site site = VodConfig.get().getHome();
+        object.addProperty("siteKey", site.getKey());
+        object.addProperty("siteName", site.getName());
+        object.addProperty("homePage", site.getHomePage());
+        WebHomeExtensionRegistry.Snapshot snapshot = WebHomeExtensionRegistry.get().snapshot();
+        object.addProperty("enabled", snapshot.enabled);
+        object.addProperty("matched", snapshot.matchedCount);
+        object.addProperty("ready", snapshot.readyCount);
+        return object.toString();
+    }
+
+    private String extLog(JsonObject payload) {
+        WebHomeExtensionRegistry.get().recordScriptLog(payload);
+        SpiderDebug.log("webhome-ext", "script message=%s data=%s", Json.safeString(payload, "message"), payload.has("data") ? payload.get("data") : "");
+        return "{}";
+    }
+
+    private String extToast(JsonObject payload) {
+        String message = Json.safeString(payload, "message");
+        if (!TextUtils.isEmpty(message)) App.post(() -> Notify.show(message));
+        return "{}";
     }
 
     private String setToolbar(JsonObject payload) {
