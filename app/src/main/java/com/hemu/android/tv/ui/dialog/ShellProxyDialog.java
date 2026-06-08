@@ -24,7 +24,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 
+import com.github.catvod.bean.Proxy;
+import com.github.catvod.net.OkHttp;
+import com.hemu.android.tv.App;
 import com.hemu.android.tv.R;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Site;
 import com.hemu.android.tv.databinding.AdapterShellProxyRuleBinding;
 import com.hemu.android.tv.databinding.DialogShellProxyBinding;
 import com.hemu.android.tv.setting.ProxySetting;
@@ -38,6 +43,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.hemu.android.tv.utils.Task;
 
 import java.net.URI;
 import java.util.ArrayList;

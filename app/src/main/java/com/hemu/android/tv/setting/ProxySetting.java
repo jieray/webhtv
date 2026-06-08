@@ -3,7 +3,7 @@ package com.hemu.android.tv.setting;
 import android.net.Uri;
 import android.text.TextUtils;
 
-import com.fongmi.android.tv.bean.Site;
+import com.hemu.android.tv.bean.Site;
 import com.github.catvod.crawler.DebugLogStore;
 import com.github.catvod.bean.Proxy;
 import com.github.catvod.crawler.SpiderDebug;
