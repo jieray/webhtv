@@ -24,6 +24,7 @@ import com.hemu.android.tv.bean.Site;
 import com.hemu.android.tv.bean.Vod;
 import com.hemu.android.tv.databinding.FragmentCollectBinding;
 import com.hemu.android.tv.model.SiteViewModel;
+import com.hemu.android.tv.setting.SiteHealthStore;
 import com.hemu.android.tv.ui.activity.FolderActivity;
 import com.hemu.android.tv.ui.activity.VideoActivity;
 import com.hemu.android.tv.ui.adapter.CollectAdapter;

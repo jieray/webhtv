@@ -24,6 +24,7 @@ import com.hemu.android.tv.bean.Vod;
 import com.hemu.android.tv.databinding.ActivityCollectBinding;
 import com.hemu.android.tv.model.SiteViewModel;
 import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.setting.SiteHealthStore;
 import com.hemu.android.tv.ui.adapter.CollectAdapter;
 import com.hemu.android.tv.ui.adapter.SearchAdapter;
 import com.hemu.android.tv.ui.base.BaseActivity;

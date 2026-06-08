@@ -12,12 +12,17 @@ import com.hemu.android.tv.setting.Setting;
 import com.hemu.android.tv.databinding.ActivitySettingEnhanceBinding;
 import com.hemu.android.tv.setting.CustomCspSetting;
 import com.hemu.android.tv.setting.ProxySetting;
+import com.hemu.android.tv.setting.SiteHealthStore;
 import com.hemu.android.tv.ui.base.BaseActivity;
 import com.hemu.android.tv.ui.dialog.CustomCspDialog;
 import com.hemu.android.tv.ui.dialog.DebugLogDialog;
 import com.hemu.android.tv.ui.dialog.ManagePageDialog;
 import com.hemu.android.tv.ui.dialog.OneKeySyncDialog;
 import com.hemu.android.tv.ui.dialog.ShellProxyDialog;
+import com.hemu.android.tv.ui.dialog.SiteHealthDialog;
+import com.hemu.android.tv.ui.dialog.WebHomeExtensionDialog;
+import com.hemu.android.tv.utils.Notify;
+import com.hemu.android.tv.web.ext.WebHomeExtensionRegistry;
 
 public class SettingEnhanceActivity extends BaseActivity {
 

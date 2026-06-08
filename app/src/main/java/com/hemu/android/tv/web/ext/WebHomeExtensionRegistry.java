@@ -1,13 +1,13 @@
-package com.fongmi.android.tv.web.ext;
+package com.hemu.android.tv.web.ext;
 
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.bean.Site;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.utils.Task;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Site;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.utils.Task;
 import com.github.catvod.crawler.SpiderDebug;
 import com.github.catvod.utils.Path;
 import com.github.catvod.utils.Prefers;

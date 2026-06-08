@@ -19,6 +19,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.ValueCallback;
 
+import androidx.webkit.ScriptHandler;
+import androidx.webkit.WebViewCompat;
+import androidx.webkit.WebViewFeature;
+
+import com.hemu.android.tv.App;
 import com.hemu.android.tv.R;
 import com.github.catvod.crawler.SpiderDebug;
 import com.hemu.android.tv.api.config.VodConfig;
@@ -29,6 +34,8 @@ import com.hemu.android.tv.utils.Notify;
 import com.hemu.android.tv.utils.UrlUtil;
 import com.hemu.android.tv.utils.Util;
 import com.hemu.android.tv.utils.WebViewUtil;
+import com.hemu.android.tv.web.ext.WebHomeExtension;
+import com.hemu.android.tv.web.ext.WebHomeExtensionRegistry;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -604,7 +611,7 @@ public class HomeWebController {
                   };
                   window.dispatchEvent(new CustomEvent('fmsdk'));
                 })();
-                """, com.fongmi.android.tv.BuildConfig.FLAVOR_mode, com.fongmi.android.tv.utils.Util.isLeanback(), debugTools ? debugSdkHook() : "");
+                """, com.hemu.android.tv.BuildConfig.FLAVOR_mode, com.hemu.android.tv.utils.Util.isLeanback(), debugTools ? debugSdkHook() : "");
     }
 
     private String debugSdkHook() {

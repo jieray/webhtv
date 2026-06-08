@@ -4,6 +4,7 @@ import android.text.TextUtils;
 
 import com.hemu.android.tv.App;
 import com.hemu.android.tv.Constant;
+import com.hemu.android.tv.api.config.LiveConfig;
 import com.hemu.android.tv.api.config.VodConfig;
 import com.hemu.android.tv.bean.Backup;
 import com.hemu.android.tv.bean.Config;

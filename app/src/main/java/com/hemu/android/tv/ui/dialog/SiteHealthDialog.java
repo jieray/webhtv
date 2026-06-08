@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -9,10 +9,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.databinding.DialogSiteHealthBinding;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.utils.ResUtil;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.databinding.DialogSiteHealthBinding;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.utils.ResUtil;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 

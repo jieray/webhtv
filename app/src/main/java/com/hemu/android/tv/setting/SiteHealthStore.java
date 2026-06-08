@@ -1,14 +1,14 @@
-package com.fongmi.android.tv.setting;
+package com.hemu.android.tv.setting;
 
 import android.graphics.Color;
 import android.text.TextUtils;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.api.SiteApi;
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.bean.Site;
-import com.fongmi.android.tv.bean.Vod;
-import com.fongmi.android.tv.utils.Task;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.api.SiteApi;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Site;
+import com.hemu.android.tv.bean.Vod;
+import com.hemu.android.tv.utils.Task;
 import com.github.catvod.utils.Prefers;
 import com.google.gson.reflect.TypeToken;
 

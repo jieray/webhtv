@@ -33,6 +33,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 
 import com.hemu.android.tv.R;
+import com.hemu.android.tv.api.config.LiveConfig;
 import com.hemu.android.tv.api.config.VodConfig;
 import com.hemu.android.tv.databinding.AdapterCustomCspBinding;
 import com.hemu.android.tv.databinding.DialogCustomCspBinding;

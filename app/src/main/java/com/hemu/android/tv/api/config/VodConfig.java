@@ -20,6 +20,7 @@ import com.github.catvod.bean.Header;
 import com.github.catvod.bean.Proxy;
 import com.github.catvod.utils.Json;
 import com.google.gson.JsonObject;
+import com.hemu.android.tv.web.ext.WebHomeExtensionRegistry;
 
 import java.util.ArrayList;
 import java.util.Collections;

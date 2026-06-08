@@ -13,6 +13,8 @@ import com.hemu.android.tv.api.config.VodConfig;
 import com.hemu.android.tv.bean.Site;
 import com.hemu.android.tv.databinding.AdapterSiteBinding;
 import com.github.catvod.crawler.SpiderDebug;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.setting.SiteHealthStore;
 
 import java.util.ArrayList;
 import java.util.List;

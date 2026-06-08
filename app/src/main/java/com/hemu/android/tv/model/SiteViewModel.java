@@ -10,6 +10,7 @@ import com.hemu.android.tv.api.config.VodConfig;
 import com.hemu.android.tv.bean.Result;
 import com.hemu.android.tv.bean.Site;
 import com.hemu.android.tv.exception.ExtractException;
+import com.hemu.android.tv.setting.SiteHealthStore;
 import com.hemu.android.tv.utils.Task;
 import com.google.common.util.concurrent.FluentFuture;
 import com.google.common.util.concurrent.ListenableFuture;

@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.hemu.android.tv.bean.Vod;
 import com.hemu.android.tv.databinding.AdapterQuickBinding;
+import com.hemu.android.tv.setting.SiteHealthStore;
 
 import java.util.ArrayList;
 import java.util.List;

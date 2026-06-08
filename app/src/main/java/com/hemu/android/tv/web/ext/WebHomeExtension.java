@@ -1,9 +1,9 @@
-package com.fongmi.android.tv.web.ext;
+package com.hemu.android.tv.web.ext;
 
 import android.text.TextUtils;
 
-import com.fongmi.android.tv.App;
-import com.fongmi.android.tv.utils.UrlUtil;
+import com.hemu.android.tv.App;
+import com.hemu.android.tv.utils.UrlUtil;
 import com.github.catvod.crawler.SpiderDebug;
 import com.github.catvod.net.OkHttp;
 import com.github.catvod.utils.Json;

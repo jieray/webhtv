@@ -68,6 +68,7 @@ import com.hemu.android.tv.service.PlaybackService;
 import com.hemu.android.tv.setting.DanmakuSetting;
 import com.hemu.android.tv.setting.PlayerSetting;
 import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.setting.SiteHealthStore;
 import com.hemu.android.tv.ui.adapter.EpisodeAdapter;
 import com.hemu.android.tv.ui.adapter.FlagAdapter;
 import com.hemu.android.tv.ui.adapter.ParseAdapter;

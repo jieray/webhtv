@@ -19,11 +19,13 @@ import com.hemu.android.tv.ui.activity.KeepActivity;
 import com.hemu.android.tv.ui.activity.LiveActivity;
 import com.hemu.android.tv.ui.activity.SearchActivity;
 import com.hemu.android.tv.ui.activity.VideoActivity;
+import com.hemu.android.tv.utils.Notify;
 import com.hemu.android.tv.utils.Task;
 import com.github.catvod.crawler.SpiderDebug;
 import com.github.catvod.utils.Json;
 import com.github.catvod.utils.Prefers;
 import com.google.gson.JsonObject;
+import com.hemu.android.tv.web.ext.WebHomeExtensionRegistry;
 
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;

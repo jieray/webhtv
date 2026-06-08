@@ -1,4 +1,4 @@
-package com.fongmi.android.tv.ui.dialog;
+package com.hemu.android.tv.ui.dialog;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -15,21 +15,20 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.fongmi.android.tv.R;
-import com.fongmi.android.tv.api.config.VodConfig;
-import com.fongmi.android.tv.bean.Site;
-import com.fongmi.android.tv.databinding.DialogWebHomeExtensionDebugBinding;
-import com.fongmi.android.tv.setting.Setting;
-import com.fongmi.android.tv.utils.Notify;
-import com.fongmi.android.tv.utils.ResUtil;
-import com.fongmi.android.tv.web.HomeWebController;
-import com.fongmi.android.tv.web.ext.WebHomeExtensionRegistry;
-import com.fongmi.android.tv.web.ext.WebHomeExtensionSourceStore;
+import com.hemu.android.tv.R;
+import com.hemu.android.tv.api.config.VodConfig;
+import com.hemu.android.tv.bean.Site;
+import com.hemu.android.tv.databinding.DialogWebHomeExtensionDebugBinding;
+import com.hemu.android.tv.setting.Setting;
+import com.hemu.android.tv.utils.Notify;
+import com.hemu.android.tv.utils.ResUtil;
+import com.hemu.android.tv.web.HomeWebController;
+import com.hemu.android.tv.web.ext.WebHomeExtensionRegistry;
+import com.hemu.android.tv.web.ext.WebHomeExtensionSourceStore;
 import com.github.catvod.utils.Json;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textview.MaterialTextView;

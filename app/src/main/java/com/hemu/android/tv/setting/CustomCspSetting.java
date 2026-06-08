@@ -3,8 +3,10 @@ package com.hemu.android.tv.setting;
 import android.text.TextUtils;
 
 import com.hemu.android.tv.App;
+import com.hemu.android.tv.bean.Live;
 import com.hemu.android.tv.bean.Site;
 import com.hemu.android.tv.bean.Style;
+import com.hemu.android.tv.gson.ExtAdapter;
 import com.hemu.android.tv.server.Server;
 import com.hemu.android.tv.utils.UrlUtil;
 import com.github.catvod.utils.Path;
