@@ -23,6 +23,7 @@ import androidx.webkit.ScriptHandler;
 import androidx.webkit.WebViewCompat;
 import androidx.webkit.WebViewFeature;
 
+import com.google.common.net.HttpHeaders;
 import com.hemu.android.tv.App;
 import com.hemu.android.tv.R;
 import com.github.catvod.crawler.SpiderDebug;
